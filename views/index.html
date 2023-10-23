@@ -8,11 +8,11 @@
 <body>
     <h1>ESP8266 Firmware Server</h1>
     <form id="upload_config" action="/api/upload/config" method="post" enctype="multipart/form-data">
-        <input type="file" name="config" accept=".json" required>
+        <input type="file" name="file_config" accept=".json" required>
         <button type="submit">Upload config.json</button>
     </form>
     <form id="upload_firmware" action="/api/upload/firmware" method="post" enctype="multipart/form-data">
-        <input type="file" name="firmware" accept=".bin" required>
+        <input type="file" name="file_firmware" accept=".bin" required>
         <button type="submit">Upload Arduino/ESP Firmware</button>
     </form>
 </body>
