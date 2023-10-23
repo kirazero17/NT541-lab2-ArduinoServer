@@ -7,7 +7,7 @@ const errorjson = { success: false, message: 'An error occurred :///' }
 router.get('/config', async (req, res) => {
   console.log("heheheh")
   try {
-    res.json(data)
+    res.status(200).json(data)
 
   } catch (error) {
     console.log(error)
