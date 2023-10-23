@@ -17,6 +17,7 @@ app.use(cors({
 }));
 
 app.use(express.static(__dirname));
+app.use('/files', express.static('firmwares/files'));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
