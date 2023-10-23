@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const data = require('../firmwares/config.json')
+const data = require('../firmwares/config/config.json')
 const errorjson = { success: false, message: 'An error occurred :///' }
 
 router.get('/config', async (req, res) => {

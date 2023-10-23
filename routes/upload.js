@@ -8,7 +8,7 @@ const errorjson = { success: false, message: 'An error occurred :///' };
 //storage and upload
 var storage1 = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './firmwares');
+    cb(null, './firmwares/config');
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
@@ -17,7 +17,7 @@ var storage1 = multer.diskStorage({
 
 var storage2 = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './firmwares/files');
+    cb(null, './firmwares/roms');
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
