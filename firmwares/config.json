@@ -1,6 +1,6 @@
 { 
       "success": true,
-      "path": "/firmwares/blink.bin", 
+      "path": "/firmwares/files/blink.bin", 
       "name": "BlinkWare",
       "version": "1.0" 
 }
