@@ -3,12 +3,12 @@ const router = express.Router()
 
 const errorjson = { success: false, message: 'An error occurred :///' }
 
-router.get('/config', async (req, res) => {
-  console.log("Config Uploaded to server")
+router.post('/config', async (req, res) => {
+  console.log("Trying to get config")
   try {
     res.json({ 
       success: true,
-      message: 'Config Uploaded', 
+      message: 'No Config Uploaded Yet', 
     })
 
   } catch (error) {
@@ -17,12 +17,12 @@ router.get('/config', async (req, res) => {
   }
 })
 
-router.get('/firmware', async (req, res) => {
-    console.log("Firmware Uploaded to server")
+router.post('/firmware', async (req, res) => {
+    console.log("Trying to get firmware")
     try {
       res.json({ 
         success: true,
-        message: 'Firmware Uploaded', 
+        message: 'No Firmware Uploaded Yet', 
       })
   
     } catch (error) {
